@@ -6,7 +6,7 @@ WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
 GREEN = (0, 255, 0)
-
+MAGENTA = (255, 0, 255)
 # definindo as dimensões da janela
 WINDOW_WIDTH = 400
 WINDOW_HEIGHT = 400
@@ -72,6 +72,7 @@ while running:
     screen.blit(button2_surf, button2_rect)
     screen.blit(button3_surf, button3_rect)
     screen.blit(button4_surf, button4_rect)
+    pygame.draw.rect(screen, MAGENTA, (175, 175, 50, 50))
 
     # desenhando o quadrado preto na tela
     if 'square_rect' in locals():
